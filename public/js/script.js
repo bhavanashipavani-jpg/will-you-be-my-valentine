@@ -1,61 +1,27 @@
 const answers_no = {
     english: [
         "No",
-        "Are you sure?",
-        "Are you really sure??",
+        "Are you sure Nana?",
+        "Chitti, Are you really sure??",
         "Are you really realy sure???",
-        "Think again?",
-        "Don't believe in second chances?",
-        "Why are you being so cold?",
-        "Maybe we can talk about it?",
-        "I am not going to ask again!",
+        "Think again Nana?",
+        "Don't you believe in second chance bangaram?",
+        "Why are you being so cold :(?",
+        "Maybe we can talk about it, call now?",
+        "I am not going to ask again, Prathyush Ramesh!",
         "Ok now this is hurting my feelings!",
-        "You are now just being mean!",
+        "You are now just being mean Prathyush!",
         "Why are you doing this to me?",
-        "Please give me a chance!",
-        "I am begging you to stop!",
-        "Ok, Let's just start over.."
+        "Plsshhh give me a chance!",
+        "Actually you dont have a chance!",
+        "Ok, Let's just start over..., You know what to say"
     ],
-    french: [
-        "Non",
-        "Tu es sûr ?",
-        "Tu es vraiment sûr ??",
-        "Tu es vraiment vraiment sûr ???",
-        "Réfléchis encore?",
-        "Tu ne crois pas aux deuxièmes chances ?",
-        "Pourquoi tu es si froid?",
-        "Peut-être, on peut en parler ?",
-        "Je ne vais pas demander encore une fois!",
-        "D'accord, maintenant ca me fait mal!",
-        "Tu es juste méchant!",
-        "Pourquoi tu me fais ça?",
-        "Donnez-moi une chance plz!",
-        "Je te supplie d'arrêter!",
-        "D'accord, recommençons.."
-    ],
-    thai: [
-        "ไม่อ่ะ",
-        "แน่ใจจริงๆหรอคะ?",
-        "แน่ใจจริงๆ จริงๆนะคะ?",
-        "อย่าบอกนะว่านี่แน่ใจสุดๆแล้วจริงๆ ?",
-        "ลองคิดดูอีกทีหน่อยสิคะ..",
-        "ขอโอกาศที่สองทีค่ะ..",
-        "อย่าเย็นชาสิคะ กระซิกๆ",
-        "ขอร้องนะคะ",
-        "น้าาาๆๆๆๆๆ",
-        "เราจะร้องไห้เอานะ กระซิกๆ",
-        "จะเอางี้ๆจริงหรอคะ",
-        "ฮือออออ",
-        "ขอโอกาศครั้งที่สองที่ค่ะ!",
-        "ขอร้องละค่าาา",
-        "โอเคค่ะ.. งั้นเริ่มใหม่ !"
-    ]
+
 };
 
 answers_yes = {
     "english": "Yes",
-    "french": "Oui",
-    "Thailand": "เย่ คืนดีกันแล้วน้า"
+
 }
 
 let language = "english"; // Default language is English
@@ -109,7 +75,7 @@ yes_button.addEventListener('click', () => {
 });
 
 function refreshBanner() {
-    // Reload banner gif to force load  
+    // Reload banner gif to force load
     let banner = document.getElementById('banner');
     let src = banner.src;
     banner.src = '';
@@ -128,7 +94,7 @@ function changeLanguage() {
     } else if (language === "thai") {
         questionHeading.textContent = "คืนดีกับเราได้อ่ะป่าว?";
     } else {
-        questionHeading.textContent = "Will you be my valentine?";
+        questionHeading.textContent = "Nana, Will you be my valentine?";
     }
 
     // Reset yes button text
@@ -148,6 +114,6 @@ function changeLanguage() {
     } else if (language === "thai") {
         successMessage.textContent = "ฮูเร่ คืนดีกันแล้วน้า :3";
     } else {
-        successMessage.textContent = "Yepppie, see you sooonnn :3";
+        successMessage.textContent = "Yepppie, see you sooonnnin Kansas :3";
     }
 }
